@@ -238,7 +238,7 @@ export default function Marks() {
                 <td  style={ { padding : tablePadding ,color : result(index) === 'Pass' ? 'green' : 'red'} }  key={index + 12}>{result(index)}</td>
                 <td  style={ { padding : tablePadding  } }  key={index + 12}> <button style={{padding : '5px 10px'}} onClick={()=>{deleteStudent(student)}} >Delete</button> </td>
               </tr>
-            );
+            );sdfsdafsdf
           })}
         </tbody>
       </table>
