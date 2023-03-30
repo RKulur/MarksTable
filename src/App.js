@@ -8,6 +8,9 @@ import UseState from "./components/UseState";
 import Marks from "./components/Marks";
 import Test from "./components/Test";
 import UseEffect from "./components/UseEffect";
+import Timer from "./components/Timer";
+import PropDrilling from "./components/PropDrilling";
+import Context from "./components/Context";
 
 function App() {
   return (
@@ -28,7 +31,11 @@ function App() {
             <Route exact path='/marks' element= {<Marks/>} />
             <Route exact path='/test' element= {<Test/>} />
             <Route exact path='/useeffect' element= {<UseEffect/>} />
+            <Route exact path='/timer' element= {<Timer/>} />
+            <Route exact path='/pd' element= {<PropDrilling/>} />
+            <Route exact path='/context' element= {<Context/>} />
             <Route exact path='*' element= {<Error/>} />
+
         </Routes>
       </BrowserRouter>
     </div>

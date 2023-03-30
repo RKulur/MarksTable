@@ -14,10 +14,22 @@ export default function UseEffect() {
 
     console.log(number)
     
+    
+    useEffect(()=>{
+      setSqrt(number**2)
+    },[number])
+    
+    function Timer(){
+      const [count,setCount] = useState(0)
 
     useEffect(()=>{
-        setSqrt(number**2)
-    },[number])
+      setTimeout(()=>{
+        setCount(count+1)
+      },1000)
+    })
+
+    return `Count : ${count}`
+    }
 
   return (
     <div>
@@ -29,6 +41,7 @@ export default function UseEffect() {
       <button onClick={()=>{ setNumber(0) }} >Reset</button>
       <button onClick={()=>{ setNumber(number+1) }} >Increment</button>
       <h1>Square : {sqrt}</h1>
+      <h2><Timer/></h2>
     </div>
   )
 }
